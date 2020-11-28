@@ -1,0 +1,17 @@
+docs
+data
+.idea
+.ipynb_checkpoints
+__pycache__
+.vscode
+mlruns
+ru2
+spacy-ru
+navec_hudlit_v1_12B_500K_300d_100q.tar
+navec_news_v1_1B_250K_300d_100q.tar
+slovnet_syntax_news_v1.tar
+*.ipynb
+build
+dist
+model
+vosk-model-small-ru-0.4.zip

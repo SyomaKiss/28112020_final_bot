@@ -1,0 +1,9 @@
+# conda install swig=3.0
+seaborn
+pytesseract
+streamlit
+textract
+flask
+jamspell
+opencv-python
+python-docx
