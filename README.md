@@ -1,6 +1,7 @@
 # Анализ текста для кейса МВД
 ## Запуск решения
 ```
+cd service/mvd
 docker build . --tag mvd:1.0 
 docker run --publish 8501:8501 --detach --name mvd mvd:1.0
 ```
