@@ -5,6 +5,15 @@ cd service/mvd
 docker build . --tag mvd:1.0 
 docker run --publish 8501:8501 --detach --name mvd mvd:1.0
 ```
+## Запуск макроса
+```
+cd service/mvd
+export FLASK_APP=flask_app.py; export FLASK_ENV=development; export FLASK_DEBUG=0; python -m flask run
+
+cp macros1.py /Applications/LibreOffice.app/Contents/Resources/Scripts/python/
+cp transform_w_highlights.py /Applications/LibreOffice.app/Contents/Resources/Scripts/python/
+```
+Where the path /Applications/LibreOffice.app/Contents/Resources/Scripts/python/ is platform dependent. Here is an example for MacOS
 
 ## Создание локальной версии, без необходимости интернета
 Добавьте следующий код в файл cli.py, находящийся в локальной папке streamlit (`${YOUR_CONDA_ENV}/lib/site-packages/streamlit/cli.py`)  
